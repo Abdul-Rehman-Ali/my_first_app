@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312724048876",
+    "project_id": "foodieflixdb",
+    "storage_bucket": "foodieflixdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312724048876:android:f2313c3473da60113c4ec9",
+        "android_client_info": {
+          "package_name": "com.example.my_first_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxV3i1gH2GbU5Aa8y9MO05eZGnYa4rD9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

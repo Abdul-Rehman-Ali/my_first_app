@@ -1,0 +1,122 @@
+drawer: Drawer(
+          backgroundColor: Colors.white,
+          child: ListView(
+            children: [
+              DrawerHeader(
+                decoration: const BoxDecoration(
+                  color: Colors.orange,
+                ),
+                child: Column(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        'asset/images/food_logo.png',
+                        height: 100.0,
+                        width: 120.0,
+                      ),
+                    ),
+                    const Text(
+                      'Food Delivery App',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('Home'),
+                      leading: Icon(Icons.home),
+                    ),
+                  ),
+                  const ListTile(
+                    title: Text('Account'),
+                    leading: Icon(Icons.account_circle),
+                  ),
+                  const ListTile(
+                    title: Text('My Cart'),
+                    leading: Icon(Icons.shopping_cart),
+                  ),
+                  const ListTile(
+                    title: Text('Favourite'),
+                    leading: Icon(Icons.favorite),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => contact_us(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('Coctact Us'),
+                      leading: Icon(Icons.contact_phone),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => feedback(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('Feedback'),
+                      leading: Icon(Icons.feedback),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => about_us(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('About Us'),
+                      leading: Icon(Icons.feed_outlined),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => privacy_policy(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('Privacy Policy'),
+                      leading: Icon(Icons.privacy_tip),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Page2(),
+                          ));
+                    },
+                    child: const ListTile(
+                      title: Text('Log Out'),
+                      leading: Icon(Icons.logout),
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
